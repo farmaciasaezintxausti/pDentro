@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SSSP><URL_LAUNCHER><URL>http://netlify.app</URL></URL_LAUNCHER></SSSP>
+<SSSP>
+    <URL_LAUNCHER>
+        <URL>http://github.io</URL>
+    </URL_LAUNCHER>
+</SSSP>

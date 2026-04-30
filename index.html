@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body style="margin:0; background:#000;">
+    <video id="v" width="100%" height="100%" autoplay muted playsinline></video>
+    <script>
+        var lista = ["1.mp4", "2.mp4"];
+        var i = 0;
+        var v = document.getElementById("v");
+
+        function play() {
+            v.src = lista[i];
+            v.play();
+            v.onended = function() {
+                i = (i + 1) % lista.length;
+                play();
+            };
+        }
+        window.onload = play;
+    </script>
+</body>
+</html>
